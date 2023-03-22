@@ -7,6 +7,7 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v3
+        run: echo "checkout completed"
       - name: install node
         uses: actions/setup-node@v3
         with:
