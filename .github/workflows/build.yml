@@ -11,5 +11,6 @@ jobs:
           node-version: '14'
           cache: 'npm'
       - run: node -v
-      - name: install dependencies
-        run: npm ci
+      - run: npm ci
+      - name: run tests
+        run: npm run test
