@@ -20,4 +20,4 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           known_hosts: ${{ secrets.KNOWN_HOSTS }}
       - name: test SSH access
-        run: ssh ${{ secrets.TARGET_HOST }} uname -a
+        run: ssh -v ${{ secrets.TARGET_HOST }} uname -a
