@@ -9,5 +9,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
+          cache: 'npm'
       - run: node -v
       - run: npm -v
+  build-server:
+    runs-on: ubuntu-latest
+    steps:
+      - run: npm ci
